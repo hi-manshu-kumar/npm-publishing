@@ -1,0 +1,8 @@
+prblm stmt :- 
+how to publlish my own small npm package and make it availiable to everyone
+
+reference links:- 
+https://hackernoon.com/publish-your-own-npm-package-946b19df577e
+https://docs.npmjs.com/getting-started/publishing-npm-packages
+https://medium.freecodecamp.org/how-to-make-a-beautiful-tiny-npm-package-and-publish-it-2881d4307f78
+
