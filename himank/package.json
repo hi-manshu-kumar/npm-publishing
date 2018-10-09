@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "Removes all spaces from a string",
   "license": "MIT",
-  "repository": "bamblehorse/tiny",
+  "repository": "hi-manshu-kumar/tiny",
   "main": "index.js",
   "keywords": [
     "tiny",
@@ -12,4 +12,3 @@
     "himank"
   ]
 }    
-}

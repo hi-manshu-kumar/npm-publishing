@@ -77,3 +77,70 @@ eureka
 now check your mail
 
 your pkg is published
+
+-------------------------------
+now lets add some documentation for others to use your pkg
+
+#create a public repo
+
+#add readme using shield.io badges
+
+[![npm bundle size (minified + gzip)](https://img.shields.io/npm/v/@himanshu.kumar394/himank.svg)](https://github.com/hi-manshu-kumar/hkd)
+[![npm bundle size (minified + gzip)](https://img.shields.io/bundlephobia/min/@himanshu.kumar394/himank.svg)](https://github.com/hi-manshu-kumar/hkd)
+
+#adding license
+    go to insights -> community -> click on MIT license -> review and submit
+
+#In index.js
+module.exports = function tiny(string) {
+  if (typeof string !== "string") throw new TypeError("Tiny wants a string!");
+  return string.replace(/\s/g, "");
+};
+
+# now update readme files
+{
+    "name": "@himanshu.kumar394/himank",
+    "version": "1.0.0",
+    "description": "Removes all spaces from a string",
+  "license": "MIT",
+  "repository": "bamblehorse/tiny",
+  "main": "index.js",
+  "keywords": [
+    "tiny",
+    "npm",
+    "package",
+    "himank"
+  ]
+}    
+
+#readme file
+# hkd-tiny
+[![npm bundle size (minified)](https://img.shields.io/npm/v/@himanshu.kumar394/tiny.svg)](https://github.com/hi-manshu-kumar/hkd-tiny)
+[![npm bundle size (minified + gzip)](https://img.shields.io/bundlephobia/min/@himanshu.kumar394/tiny.svg)](https://github.com/hi-manshu-kumar/hkd-tiny)
+
+Removes all spaces from a string.
+
+## Install
+
+```
+$ npm install @himanshu.kumar394/tiny
+```
+
+## Usage
+
+```js
+const tiny = require("@himanshu.kumar394/tiny");
+
+tiny("So much space!");
+//=> "Somuchspace!"
+
+tiny(1337);
+//=> Uncaught TypeError: Tiny wants a string!
+//    at tiny (<anonymous>:2:41)
+//    at <anonymous>:1:1
+```
+
+now update the version
+npm version major
+
+npm publish
