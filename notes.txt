@@ -6,3 +6,74 @@ https://hackernoon.com/publish-your-own-npm-package-946b19df577e
 https://docs.npmjs.com/getting-started/publishing-npm-packages
 https://medium.freecodecamp.org/how-to-make-a-beautiful-tiny-npm-package-and-publish-it-2881d4307f78
 
+Why?
+you remember the dry principle in programming
+dont repeat yourself - 
+when we have to perform sorting we create a function to do swapping of nos if the conditon of swapping is true
+that function was only availiable to c file
+how about we take this dry principle to a more global level
+suppose you have to write codes on diff programs and use that swappping fucniton availiable to you from internet
+yes internet can also store your swapping function after all its also package which returns the function of swapping
+
+what is npm used in industry?
+you may have used npm modules in your project
+like express, lodash, chalk using this different software products are delivered
+
+how can you use npm more better?
+npm being an ideal and ever-growing ecosystem and its free to use.
+So publishing our repeating code and reusing it in different project makes npm a great tool for developers.
+
+Now lets get to our hand dirty..
+
+#Step 1: npm account
+Go to npm and register your account, so that you can publish your package.
+
+https://www.npmjs.com/
+
+#Step 2: login into npm using your command line
+
+Open terminal and write
+npm adduser
+     or
+npm login
+
+it will ask you for username, password, email
+enter these and you will se Logged in.........
+
+#Step 3: Lets make a package
+First we need a folder to hold our code. Create one in whichever way is comfortable for you. I’m calling my package tiny because it really is very small. I’ve added some terminal commands for those who aren’t familiar with them.
+
+md tiny
+
+In that folder we need a package.json file. If you already use Node.js — you’ve met this file before. It’s a JSON file which includes information about your project and has a plethora of different options. In this tutorial, we are only going to focus on two of them.
+
+cd tiny && touch package.json
+
+#first attempt
+
+npm publish
+
+#second attempt
+
+{
+"name": "@bamlehorse/tiny"
+}
+
+#third attempt
+
+semantic versioning
+{
+"name": "@bamblehorse/tiny",
+"version": "1.0.0"
+}
+
+#4th attempt
+npm publish
+
+#5th attempt
+npm publish --access=public
+
+eureka
+now check your mail
+
+your pkg is published
