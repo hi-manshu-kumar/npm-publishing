@@ -144,3 +144,19 @@ now update the version
 npm version major
 
 npm publish
+-----------------now what if we want to remove our package---------------
+if the pkg was published less than 24 hrs
+
+->  npm unpublish <package_name> -f to remove the entire package thanks to the -f or force flag
+->  npm unpublish <package_name>@<version> to remove a specific version
+
+if the pkg was published more than 24 hrs
+
+->  npm deprecate <package> "<message>" to deprecate the entire package
+->  npm deprecate <package>@<version> "<message>" to deprecate a specific version
+
+once deprecate if we want the package to be removed from your user profile, it can be transfered to our @npm account
+
+->  npm owner add npm <package>
+->  npm owner rm <your_username> <package>
+-------------------------------------------------------------------------------------
